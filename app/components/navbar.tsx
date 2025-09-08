@@ -6,21 +6,11 @@ export default function Navbar() {
       <ul className="flex space-x-4">
         <li>
           <a href="#" className="hover:underline">
-            Home
+            Download CV
           </a>
         </li>
         <li>
-          <a href="#" className="hover:underline">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:underline">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:underline">
+          <a href="#contact" className="hover:underline">
             Contact
           </a>
         </li>
