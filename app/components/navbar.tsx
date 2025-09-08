@@ -8,7 +8,7 @@ export default function Navbar() {
       </h1>
       <ul className="flex space-x-4">
         <li>
-          <a href="#" className="hover:underline">
+          <a href="/RafidRisunCV.pdf" download className="hover:underline">
             Download CV
           </a>
         </li>

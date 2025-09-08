@@ -85,7 +85,7 @@ export const projects = [
   {
     id: 2,
     title: "ManageResto (ThreeSquare)",
-    tech: "Angular, Bootstrap, .Net Core, Postgres",
+    tech: "Angular, Bootstrap, SASS, .Net Core, Postgres",
     description: `A Multi tenant POS application where you can register orders, customize, put on hold, make payment. A terminal Dashboard to have a clear picture on on-going orders and an overall summary. An admin section to make changes in the menu items, categories, variations etc.`,
     link: "",
   },
