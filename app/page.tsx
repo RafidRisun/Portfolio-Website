@@ -66,7 +66,7 @@ export default function Home() {
               src="/rafid.png"
               alt="Picture of the author"
               fill
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
           <p className="text-white text-xs sm:text-sm absolute bottom-2 left-2">
@@ -114,7 +114,7 @@ export default function Home() {
               src="/working.png"
               alt="Picture of the author"
               fill
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
           <div className="flex-2 w-2/3 min-w-2/3 max-w-2/3 text-start justify-center flex flex-col pl-10">

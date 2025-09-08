@@ -47,12 +47,21 @@ export default function Navbar() {
         <div className="flex flex-col w-full">
           <ul className="flex flex-col space-y-4 p-4 bg-white text-zinc-950 text-right">
             <li>
-              <a href="/RafidRisunCV.pdf" download className="hover:underline">
+              <a
+                href="/RafidRisunCV.pdf"
+                download
+                className="hover:underline"
+                onClick={() => setHamburgerOpen(false)}
+              >
                 Download CV
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:underline">
+              <a
+                href="#contact"
+                className="hover:underline"
+                onClick={() => setHamburgerOpen(false)}
+              >
                 Contact
               </a>
             </li>
