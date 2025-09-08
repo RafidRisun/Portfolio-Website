@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import { dotFont } from "../font/localFonts";
-import { PiHamburger } from "react-icons/pi";
+//import { PiHamburger } from "react-icons/pi";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -40,7 +41,7 @@ export default function Navbar() {
             clickOnBurger();
           }}
         >
-          <PiHamburger className="text-2xl" />
+          <RxHamburgerMenu className="text-lg" />
         </button>
       </nav>
       {hamburgerOpen && (
