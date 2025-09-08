@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="h-20 p-8 bg-white flex justify-between items-baseline sticky top-0 z-50 text-zinc-950">
       <h1 className={`text-lg sm:text-3xl ${dotFont.className} cursor-default`}>
-        Hi, I'm a Rafid
+        Hi, I&apos;m a Rafid
       </h1>
       <ul className="flex space-x-4">
         <li>
