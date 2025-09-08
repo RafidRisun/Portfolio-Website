@@ -21,7 +21,7 @@ export default function Navbar() {
         <h1
           className={`text-lg md:text-3xl ${dotFont.className} cursor-default`}
         >
-          Hi, I&apos;m a Rafid
+          Hi, I&apos;m Rafid
         </h1>
         <ul className="hidden md:flex space-x-4">
           <li>
