@@ -23,23 +23,55 @@ export const titleList = [
 ];
 
 export const skills = [
-  { id: 1, icon: <FaReact className="text-6xl" />, label: "React" },
-  { id: 2, icon: <FaReact className="text-6xl" />, label: "React Native" },
-  { id: 3, icon: <RiNextjsFill className="text-6xl" />, label: "Next.js" },
+  { id: 1, icon: <FaReact className="text-4xl sm:text-6xl" />, label: "React" },
+  {
+    id: 2,
+    icon: <FaReact className="text-4xl sm:text-6xl" />,
+    label: "React Native",
+  },
+  {
+    id: 3,
+    icon: <RiNextjsFill className="text-4xl sm:text-6xl" />,
+    label: "Next.js",
+  },
   {
     id: 4,
-    icon: <RiTailwindCssFill className="text-6xl" />,
+    icon: <RiTailwindCssFill className="text-4xl sm:text-6xl" />,
     label: "Tailwind CSS",
   },
-  { id: 5, icon: <FaAngular className="text-6xl" />, label: "Angular" },
-  { id: 6, icon: <SiNestjs className="text-6xl" />, label: "Nest.js" },
-  { id: 7, icon: <AiOutlineDotNet className="text-6xl" />, label: ".NET" },
-  { id: 8, icon: <FaBootstrap className="text-6xl" />, label: "Bootstrap" },
-  { id: 9, icon: <FaSass className="text-6xl" />, label: "Sass" },
-  { id: 10, icon: <FaHtml5 className="text-6xl" />, label: "HTML" },
-  { id: 11, icon: <FaCss3 className="text-6xl" />, label: "CSS" },
-  { id: 12, icon: <FaJs className="text-6xl" />, label: "JavaScript" },
-  { id: 13, icon: <FaFigma className="text-6xl" />, label: "Figma" },
+  {
+    id: 5,
+    icon: <FaAngular className="text-4xl sm:text-6xl" />,
+    label: "Angular",
+  },
+  {
+    id: 6,
+    icon: <SiNestjs className="text-4xl sm:text-6xl" />,
+    label: "Nest.js",
+  },
+  {
+    id: 7,
+    icon: <AiOutlineDotNet className="text-4xl sm:text-6xl" />,
+    label: ".NET",
+  },
+  {
+    id: 8,
+    icon: <FaBootstrap className="text-4xl sm:text-6xl" />,
+    label: "Bootstrap",
+  },
+  { id: 9, icon: <FaSass className="text-4xl sm:text-6xl" />, label: "Sass" },
+  { id: 10, icon: <FaHtml5 className="text-4xl sm:text-6xl" />, label: "HTML" },
+  { id: 11, icon: <FaCss3 className="text-4xl sm:text-6xl" />, label: "CSS" },
+  {
+    id: 12,
+    icon: <FaJs className="text-4xl sm:text-6xl" />,
+    label: "JavaScript",
+  },
+  {
+    id: 13,
+    icon: <FaFigma className="text-4xl sm:text-6xl" />,
+    label: "Figma",
+  },
 ];
 
 export const projects = [

@@ -8,9 +8,11 @@ export default function ExperienceCard({
 }) {
   return (
     <div key={exp.id} className="text-white mb-4">
-      <h2 className={`text-2xl ${dotFont.className}`}>{exp.company}</h2>
-      <h3 className="text-lg">{exp.role}</h3>
-      <p className="text-md">{exp.period}</p>
+      <h2 className={`text-lg sm:text-2xl ${dotFont.className}`}>
+        {exp.company}
+      </h2>
+      <h3 className="text-sm sm:text-lg">{exp.role}</h3>
+      <p className="text-xs sm:text-md">{exp.period}</p>
     </div>
   );
 }

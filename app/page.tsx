@@ -9,11 +9,13 @@ import { titleList, skills, projects, experiences } from "./data";
 //components
 import ProjectCard from "./components/project-card";
 import ExperienceCard from "./components/experience-card";
+import Skills from "./modals/skills";
 
 export default function Home() {
   const [screenHeight, setScreenHeight] = useState(0);
   const [oneThirdHeight, setOneThirdHeight] = useState(0);
   const [twoThirdHeight, setTwoThirdHeight] = useState(0);
+  const [modal, setModal] = useState(false);
 
   const navbarHeight = 130; // h-20 in Tailwind = 5rem = 80px
 
@@ -37,11 +39,13 @@ export default function Home() {
     <main className="flex-1 overflow-auto  bg-white p-2 pt-0">
       <div className="w-full flex flex-col flex-1 overflow-auto gap-2">
         <div
-          className={`flex bg-[#da754d] items-center justify-center rounded px-10 relative`}
+          className={`flex flex-col sm:flex-row bg-[#da754d] items-center justify-center rounded px-10 relative`}
           style={{ height: twoThirdHeight }}
         >
-          <div className="flex-2 w-2/3 min-w-2/3 max-w-2/3 text-center flex flex-col pl-10">
-            <h1 className={`text-8xl text-white ${dotFont.className}`}>
+          <div className="flex-1 sm:flex-2 w-full sm:w-2/3 sm:min-w-2/3 sm:max-w-2/3 text-center flex flex-col sm:pl-10 items-center justify-center py-10">
+            <h1
+              className={`text-4xl sm:text-8xl text-white ${dotFont.className} cursor-default`}
+            >
               <Typewriter
                 words={titleList}
                 loop={0}
@@ -52,12 +56,12 @@ export default function Home() {
                 delaySpeed={5000}
               />
             </h1>
-            <p className="text-2xl text-white mt-4">
+            <p className="text-md sm:text-2xl text-white mt-4 cursor-default">
               I build things for the web.
             </p>
           </div>
 
-          <div className="relative h-full aspect-square flex-1">
+          <div className="relative h-full aspect-square flex-1 hidden sm:block">
             <Image
               src="/rafid.png"
               alt="Picture of the author"
@@ -65,18 +69,19 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <p className="text-white text-sm absolute bottom-2 left-2">
+          <p className="text-white text-xs sm:text-sm absolute bottom-2 left-2">
             Made with Next.js by Rafid Hassan Risun
           </p>
         </div>
         <div
-          className="overflow-hidden flex"
+          className="overflow-hidden flex cursor-pointer"
           style={{ height: oneThirdHeight }}
+          onClick={() => setModal(true)}
         >
-          <ul className="flex gap-10 items-center w-max text-zinc-950 infinite-scroll">
+          <ul className="flex gap-5 sm:gap-10 items-center w-max text-zinc-950 infinite-scroll">
             {[...skills, ...skills].map((skill, idx) => (
               <li key={`${skill.id}-${idx}`}>
-                <div className="h-20 w-60 text-center px-4 flex gap-3 items-center">
+                <div className="h-20 w-50 sm:w-60 text-center px-2 sm:px-4 flex gap-3 items-center justify-center">
                   {skill.icon}
                   <p className="text-lg text-start">{skill.label}</p>
                 </div>
@@ -85,23 +90,23 @@ export default function Home() {
           </ul>
         </div>
         <h2
-          className={`flex w-full items-center justify-center rounded py-5 gap-10 bg-black text-2xl ${dotFont.className}`}
+          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-black text-lg sm:text-2xl ${dotFont.className} cursor-default`}
         >
           Projects
         </h2>
-        <div className="grid grid-cols-3 gap-2 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full">
           {projects.map((project, idx) => (
             <ProjectCard key={`${project.id}-${idx}`} project={project} />
           ))}
         </div>
         <div className="flex h-40 w-full" />
         <h2
-          className={`flex w-full items-center justify-center rounded py-5 gap-10 bg-[#da754d] text-2xl ${dotFont.className}`}
+          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-[#da754d] text-lg sm:text-2xl ${dotFont.className} cursor-default`}
         >
           Work Experience
         </h2>
-        <div className="flex h-80 w-full bg-[#da754d]">
-          <div className="relative h-full aspect-square flex-1">
+        <div className="flex h-80 w-full bg-[#da754d] rounded">
+          <div className="relative h-full aspect-square flex-1 hidden sm:block">
             <Image
               src="/working.png"
               alt="Picture of the author"
@@ -118,24 +123,24 @@ export default function Home() {
         <div className="flex h-40 w-full" />
         <h2
           id="contact"
-          className={`flex w-full items-center justify-center rounded py-5 gap-10 bg-black text-2xl ${dotFont.className}`}
+          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-black text-lg sm:text-2xl ${dotFont.className} cursor-default`}
         >
           Contact
         </h2>
-        <div className="flex h-80 w-full bg-black">
+        <div className="flex h-80 w-full bg-black rounded">
           <div className="flex-1 flex flex-col justify-center items-center">
             <a
               href="mailto:rafidhassanrisun@gmail.com"
-              className="text-white text-lg hover:underline"
+              className="text-white text-sm sm:text-md hover:underline"
             >
               rafidhassanrisun@gmail.com
             </a>
-            <p className="text-white text-lg">+8801671048227</p>
+            <p className="text-white text-sm sm:text-md">+8801671048227</p>
             <a
               href="https://linkedin.com/in/RafidRisun"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-lg hover:underline"
+              className="text-white text-sm sm:text-md hover:underline"
             >
               linkedin.com/in/RafidRisun
             </a>
@@ -143,13 +148,14 @@ export default function Home() {
               href="https://github.com/RafidRisun"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-lg hover:underline"
+              className="text-white text-sm sm:text-md hover:underline"
             >
               github.com/RafidRisun
             </a>
           </div>
         </div>
       </div>
+      {modal && <Skills setModal={setModal} />}
     </main>
   );
 }

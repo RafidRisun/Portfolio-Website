@@ -15,12 +15,16 @@ export default function ProjectCard({
   return (
     <div
       key={project.id}
-      className="p-4 flex flex-col justify-between bg-black rounded h-80"
+      className="p-4 flex flex-col justify-between bg-black rounded h-70 sm:h-80"
     >
       <div className="text-white">
-        <h2 className={`text-2xl ${dotFont.className}`}>{project.title}</h2>
-        <h2 className="text-lg">{project.tech}</h2>
-        <p className="mt-2 text-sm text-justify">{project.description}</p>
+        <h2 className={`text-lg sm:text-2xl ${dotFont.className}`}>
+          {project.title}
+        </h2>
+        <h2 className="text-sm sm:text-lg">{project.tech}</h2>
+        <p className="mt-2 text-xs sm:text-sm text-justify">
+          {project.description}
+        </p>
       </div>
       {project.link && (
         <a href={project.link} className="text-sm text-white hover:underline">
