@@ -12,7 +12,7 @@ export default function ExperienceCard({
         {exp.company}
       </h2>
       <h3 className="text-sm sm:text-lg">{exp.role}</h3>
-      <p className="text-xs sm:text-md">{exp.period}</p>
+      <p className="text-sm sm:text-md">{exp.period}</p>
     </div>
   );
 }

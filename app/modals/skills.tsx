@@ -13,7 +13,7 @@ export default function Skills({
     setModal(false);
   };
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div className="fixed inset-0 flex items-center justify-center z-50 text-white">
       <div className="bg-black rounded p-7 shadow-xl w-full max-w-xl border border-gray-300 flex flex-col gap-5 relative">
         <button
           className="text-white text-4xl absolute top-2 right-2 cursor-pointer hover:text-gray-400"

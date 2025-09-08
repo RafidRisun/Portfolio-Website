@@ -61,7 +61,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="relative h-full aspect-square flex-1 hidden sm:block">
+          <div className="relative h-full aspect-square flex-1 hidden lg:block">
             <Image
               src="/rafid.png"
               alt="Picture of the author"
@@ -74,7 +74,7 @@ export default function Home() {
           </p>
         </div>
         <div
-          className="overflow-hidden flex cursor-pointer"
+          className="overflow-hidden flex cursor-pointer relative"
           style={{ height: oneThirdHeight }}
           onClick={() => setModal(true)}
         >
@@ -88,25 +88,28 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          <p className="text-zinc-950 text-xs sm:text-sm text-end pr-2 absolute bottom-0 right-0">
+            Click to see all skills
+          </p>
         </div>
         <h2
-          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-black text-lg sm:text-2xl ${dotFont.className} cursor-default`}
+          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-black text-lg sm:text-2xl ${dotFont.className} cursor-default text-white`}
         >
           Projects
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 w-full">
           {projects.map((project, idx) => (
             <ProjectCard key={`${project.id}-${idx}`} project={project} />
           ))}
         </div>
         <div className="flex h-40 w-full" />
         <h2
-          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-[#da754d] text-lg sm:text-2xl ${dotFont.className} cursor-default`}
+          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-[#da754d] text-lg sm:text-2xl ${dotFont.className} cursor-default text-white`}
         >
           Work Experience
         </h2>
         <div className="flex h-80 w-full bg-[#da754d] rounded">
-          <div className="relative h-full aspect-square flex-1 hidden sm:block">
+          <div className="relative h-full aspect-square flex-1 hidden md:block">
             <Image
               src="/working.png"
               alt="Picture of the author"
@@ -123,7 +126,7 @@ export default function Home() {
         <div className="flex h-40 w-full" />
         <h2
           id="contact"
-          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-black text-lg sm:text-2xl ${dotFont.className} cursor-default`}
+          className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-black text-lg sm:text-2xl ${dotFont.className} cursor-default text-white`}
         >
           Contact
         </h2>
@@ -131,16 +134,16 @@ export default function Home() {
           <div className="flex-1 flex flex-col justify-center items-center">
             <a
               href="mailto:rafidhassanrisun@gmail.com"
-              className="text-white text-sm sm:text-md hover:underline"
+              className="text-white text-md sm:text-lg hover:underline"
             >
               rafidhassanrisun@gmail.com
             </a>
-            <p className="text-white text-sm sm:text-md">+8801671048227</p>
+            <p className="text-white text-md sm:text-lg">+8801671048227</p>
             <a
               href="https://linkedin.com/in/RafidRisun"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-sm sm:text-md hover:underline"
+              className="text-white text-md sm:text-lg hover:underline"
             >
               linkedin.com/in/RafidRisun
             </a>
@@ -148,7 +151,7 @@ export default function Home() {
               href="https://github.com/RafidRisun"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-sm sm:text-md hover:underline"
+              className="text-white text-md sm:text-lg hover:underline"
             >
               github.com/RafidRisun
             </a>
