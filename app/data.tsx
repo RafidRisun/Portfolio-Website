@@ -116,11 +116,17 @@ export const experiences = [
   {
     id: 1,
     company: "ThreeSquare",
+    role: "UI/UX Designer",
+    period: "September 2025 - Present",
+  },
+  {
+    id: 2,
+    company: "ThreeSquare",
     role: "Software Developer Intern",
     period: "March 2025 - August 2025",
   },
   {
-    id: 2,
+    id: 3,
     company: "Aronnyo Jon",
     role: "Illustrator of the company released comic book Shoronkholar Golpo",
     period: "February 2024 - August 2024",

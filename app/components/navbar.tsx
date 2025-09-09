@@ -3,6 +3,7 @@ import { useState } from "react";
 import { dotFont } from "../font/localFonts";
 //import { PiHamburger } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import DarkMode from "./dark-mode";
 
 export default function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -24,6 +25,9 @@ export default function Navbar() {
           Hi, I&apos;m Rafid
         </h1>
         <ul className="hidden md:flex space-x-4">
+          <li>
+            <DarkMode />
+          </li>
           <li>
             <a href="/RafidRisunCV.pdf" download className="hover:underline">
               Download CV

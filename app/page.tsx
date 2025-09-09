@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex-1 overflow-auto  bg-white p-2 pt-0">
+    <main className="flex-1 overflow-auto  bg-white p-2 pt-0 dark:bg-black">
       <div className="w-full flex flex-col flex-1 overflow-auto gap-2">
         <div
           className={`flex flex-col sm:flex-row bg-[#da754d] items-center justify-center rounded px-10 relative`}
@@ -69,9 +69,6 @@ export default function Home() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p className="text-white text-2xs sm:text-xs absolute bottom-2 left-2">
-            Made with Next.js & Tailwind by Rafid Hassan Risun
-          </p>
         </div>
         <div
           className="overflow-hidden flex cursor-pointer relative"
@@ -155,6 +152,9 @@ export default function Home() {
             >
               github.com/RafidRisun
             </a>
+            <p className="text-white text-2xs sm:text-xs">
+              Made with Next.js & Tailwind by Rafid Hassan Risun
+            </p>
           </div>
         </div>
       </div>
