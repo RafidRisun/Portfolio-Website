@@ -105,7 +105,7 @@ export default function Home() {
         >
           Work Experience
         </h2>
-        <div className="flex h-80 w-full bg-[#da754d] rounded">
+        <div className="flex py-10 w-full bg-[#da754d] rounded">
           <div className="relative h-full aspect-square flex-1 hidden md:block">
             <Image
               src="/working.png"
