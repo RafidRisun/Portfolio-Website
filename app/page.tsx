@@ -69,8 +69,8 @@ export default function Home() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p className="text-white text-xs sm:text-sm absolute bottom-2 left-2">
-            Made with Next.js by Rafid Hassan Risun
+          <p className="text-white text-2xs sm:text-xs absolute bottom-2 left-2">
+            Made with Next.js & Tailwind by Rafid Hassan Risun
           </p>
         </div>
         <div
