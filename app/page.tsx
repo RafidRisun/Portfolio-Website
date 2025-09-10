@@ -47,7 +47,7 @@ export default function Home() {
       >
         <div className="w-full flex flex-col flex-1 overflow-auto gap-2">
           <div
-            className="flex flex-col sm:flex-row bg-[#da754d] items-center justify-center rounded px-10 relative"
+            className="flex flex-col sm:flex-row bg-[#da754d] dark:bg-[#475C46] items-center justify-center rounded px-10 relative"
             style={{ height: twoThirdHeight }}
           >
             <div className="flex-1 sm:flex-2 w-full sm:w-2/3 sm:min-w-2/3 sm:max-w-2/3 text-center flex flex-col sm:pl-10 items-center justify-center py-10">
@@ -113,11 +113,11 @@ export default function Home() {
           </div>
           <div className="flex h-40 w-full" />
           <h2
-            className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-[#da754d] text-lg sm:text-2xl ${dotFont.className} cursor-default text-white`}
+            className={`flex w-full items-center justify-center rounded py-2 sm:py-5 gap-10 bg-[#da754d] dark:bg-[#475C46] text-lg sm:text-2xl ${dotFont.className} cursor-default text-white`}
           >
             Work Experience
           </h2>
-          <div className="flex flex-col sm:flex-row bg-[#da754d] items-start justify-start rounded relative">
+          <div className="flex flex-col sm:flex-row bg-[#da754d] dark:bg-[#475C46] items-start justify-start rounded relative">
             <div className="relative h-full aspect-3/2 flex-1 hidden lg:block">
               <Image
                 src="/working.png"
