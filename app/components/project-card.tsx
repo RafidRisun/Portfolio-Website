@@ -3,6 +3,7 @@ import { dotFont } from "../font/localFonts";
 
 export default function ProjectCard({
   project,
+  dark,
 }: {
   project: {
     id: number;
@@ -11,11 +12,14 @@ export default function ProjectCard({
     description: string;
     link?: string;
   };
+  dark: boolean;
 }) {
   return (
     <div
       key={project.id}
-      className="p-4 flex flex-col justify-between bg-black rounded h-90 sm:h-100 lg:h-80"
+      className={`p-4 flex flex-col justify-between rounded h-90 sm:h-100 lg:h-80 ${
+        dark ? "bg-gray-800" : "bg-black"
+      }`}
     >
       <div className="text-white">
         <h2 className={`text-lg sm:text-2xl ${dotFont.className}`}>

@@ -5,7 +5,13 @@ import { dotFont } from "../font/localFonts";
 import { RxHamburgerMenu } from "react-icons/rx";
 import DarkMode from "./dark-mode";
 
-export default function Navbar() {
+export default function Navbar({
+  dark,
+  setDark,
+}: {
+  dark: boolean;
+  setDark: (dark: boolean) => void;
+}) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const clickOnBurger = () => {
@@ -17,23 +23,27 @@ export default function Navbar() {
   };
 
   return (
-    <>
-      <nav className="h-20 p-8 bg-white flex justify-between items-baseline sticky top-0 z-50 text-zinc-950">
+    <nav
+      className={`w-full bg-white flex flex-col sticky top-0 z-50 text-zinc-950 ${
+        dark ? "dark" : ""
+      } dark:bg-zinc-900 dark:text-white`}
+    >
+      <div className="w-full flex justify-between items-center h-full min-h-20 px-8">
         <h1
           className={`text-lg md:text-3xl ${dotFont.className} cursor-default`}
         >
           Hi, I&apos;m Rafid
         </h1>
         <ul className="hidden md:flex space-x-4">
-          <li>
-            <DarkMode />
+          <li className="flex items-center">
+            <DarkMode dark={dark} setDark={setDark} />
           </li>
-          <li>
+          <li className="flex items-center">
             <a href="/RafidRisunCV.pdf" download className="hover:underline">
               Download CV
             </a>
           </li>
-          <li>
+          <li className="flex items-center">
             <a href="#contact" className="hover:underline">
               Contact
             </a>
@@ -47,10 +57,13 @@ export default function Navbar() {
         >
           <RxHamburgerMenu className="text-lg" />
         </button>
-      </nav>
+      </div>
       {hamburgerOpen && (
-        <div className="flex flex-col w-full">
-          <ul className="flex flex-col space-y-4 p-4 bg-white text-zinc-950 text-right">
+        <div className="flex flex-col w-screen">
+          <ul className="flex flex-col space-y-4 p-4 bg-white text-zinc-950 dark:bg-zinc-900 dark:text-white text-right">
+            <li>
+              <DarkMode dark={dark} setDark={setDark} />
+            </li>
             <li>
               <a
                 href="/RafidRisunCV.pdf"
@@ -73,6 +86,6 @@ export default function Navbar() {
           </ul>
         </div>
       )}
-    </>
+    </nav>
   );
 }

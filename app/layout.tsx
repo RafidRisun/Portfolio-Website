@@ -27,10 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${textFont.className} text-white antialiased`}>
-        <div className="flex flex-col h-screen w-full">
-          <Navbar />
-          {children}
-        </div>
+        <div className="flex flex-col h-screen w-full">{children}</div>
       </body>
     </html>
   );

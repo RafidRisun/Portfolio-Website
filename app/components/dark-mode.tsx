@@ -1,32 +1,22 @@
 import { useEffect, useState } from "react";
 import { MdDarkMode } from "react-icons/md";
-import { CiLight } from "react-icons/ci";
+import { AiFillSun } from "react-icons/ai";
 
-export default function DarkMode() {
-  const [dark, setDark] = useState(() => {
-    // Check localStorage on initial load
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "dark";
-    }
-    return false;
-  });
-
-  useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [dark]);
-
+export default function DarkMode({
+  dark,
+  setDark,
+}: {
+  dark: boolean;
+  setDark: (dark: boolean) => void;
+}) {
   return (
     <button
-      onClick={() => setDark((prev) => !prev)}
-      className=" text-white dark:text-black text-xs sm:text-sm hover:text-gray-600"
+      className={`${
+        dark ? "text-white" : "text-black"
+      } text-xs sm:text-lg hover:text-gray-600 cursor-pointer`}
+      onClick={() => setDark(!dark)}
     >
-      {dark ? <CiLight /> : <MdDarkMode />}
+      {dark ? <AiFillSun /> : <MdDarkMode />}
     </button>
   );
 }
