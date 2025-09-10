@@ -39,7 +39,7 @@ export default function Home() {
     <main className="flex-1 overflow-auto  bg-white p-2 pt-0 dark:bg-black">
       <div className="w-full flex flex-col flex-1 overflow-auto gap-2">
         <div
-          className={`flex flex-col sm:flex-row bg-[#da754d] items-center justify-center rounded px-10 relative`}
+          className="flex flex-col sm:flex-row bg-[#da754d] items-center justify-center rounded px-10 relative"
           style={{ height: twoThirdHeight }}
         >
           <div className="flex-1 sm:flex-2 w-full sm:w-2/3 sm:min-w-2/3 sm:max-w-2/3 text-center flex flex-col sm:pl-10 items-center justify-center py-10">
@@ -105,16 +105,16 @@ export default function Home() {
         >
           Work Experience
         </h2>
-        <div className="flex py-10 w-full bg-[#da754d] rounded">
-          <div className="relative h-full aspect-square flex-1 hidden md:block">
+        <div className="flex flex-col sm:flex-row bg-[#da754d] items-center justify-center rounded px-10 relative">
+          <div className="relative h-full aspect-3/2 flex-1 hidden lg:block">
             <Image
               src="/working.png"
               alt="Picture of the author"
               fill
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "cover" }}
             />
           </div>
-          <div className="flex-2 w-2/3 min-w-2/3 max-w-2/3 text-start justify-center flex flex-col pl-10">
+          <div className="flex-2 w-2/3 min-w-2/3 max-w-2/3 text-start justify-center flex flex-col pl-10 py-5">
             {experiences.map((exp, idx) => (
               <ExperienceCard key={`${exp.id}-${idx}`} exp={exp} />
             ))}
@@ -152,7 +152,7 @@ export default function Home() {
             >
               github.com/RafidRisun
             </a>
-            <p className="text-white text-2xs sm:text-xs">
+            <p className="text-white text-xs sm:text-xs pt-10 text-wrap text-center p-5">
               Made with Next.js & Tailwind by Rafid Hassan Risun
             </p>
           </div>

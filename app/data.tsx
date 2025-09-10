@@ -116,7 +116,7 @@ export const experiences = [
   {
     id: 1,
     company: "ThreeSquare",
-    role: "UI/UX Designer",
+    role: "UI/UX Designer Part-time",
     period: "September 2025 - Present",
   },
   {
