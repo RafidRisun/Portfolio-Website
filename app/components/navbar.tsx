@@ -61,7 +61,7 @@ export default function Navbar({
       {hamburgerOpen && (
         <div className="flex flex-col w-screen">
           <ul className="flex flex-col space-y-4 p-4 bg-white text-zinc-950 dark:bg-zinc-900 dark:text-white text-right">
-            <li>
+            <li onClick={() => setDark(!dark)}>
               <DarkMode dark={dark} setDark={setDark} />
             </li>
             <li>
