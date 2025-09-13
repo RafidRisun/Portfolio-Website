@@ -118,7 +118,7 @@ export default function Home() {
             Work Experience
           </h2>
           <div className="flex flex-col sm:flex-row bg-[#da754d] dark:bg-[#475C46] items-start justify-start rounded relative">
-            <div className="relative h-full aspect-3/2 flex-1 hidden lg:block">
+            <div className="relative h-full aspect-square flex-1 hidden lg:block">
               <Image
                 src="/working.png"
                 alt="Picture of the author"
