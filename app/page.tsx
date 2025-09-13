@@ -47,10 +47,10 @@ export default function Home() {
       >
         <div className="w-full flex flex-col flex-1 overflow-auto gap-2">
           <div
-            className="flex flex-col sm:flex-row bg-[#da754d] dark:bg-[#475C46] items-center justify-center rounded px-10 relative"
+            className="flex flex-col sm:flex-row bg-[#da754d] dark:bg-[#475C46] rounded px-10 relative"
             style={{ height: twoThirdHeight }}
           >
-            <div className="flex-1 sm:flex-2 w-full sm:w-2/3 sm:min-w-2/3 sm:max-w-2/3 text-center flex flex-col sm:pl-10 items-center justify-center py-10">
+            <div className="flex-1 sm:flex-2 text-center flex flex-col sm:pl-10 items-center justify-center py-10">
               <h1
                 className={`text-4xl sm:text-8xl text-white ${dotFont.className} cursor-default`}
               >
@@ -69,12 +69,12 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative h-full aspect-square flex-1 hidden lg:block">
+            <div className="relative hidden lg:flex flex-1 items-end">
               <Image
                 src="/rafid.png"
                 alt="Picture of the author"
                 fill
-                style={{ objectFit: "contain" }}
+                style={{ objectFit: "cover" }}
               />
             </div>
           </div>
@@ -117,8 +117,8 @@ export default function Home() {
           >
             Work Experience
           </h2>
-          <div className="flex flex-col sm:flex-row bg-[#da754d] dark:bg-[#475C46] items-start justify-start rounded relative">
-            <div className="relative h-full aspect-square flex-1 hidden lg:block">
+          <div className="flex flex-col sm:flex-row bg-[#da754d] dark:bg-[#475C46] rounded relative">
+            <div className="relative hidden lg:flex flex-1 items-end">
               <Image
                 src="/working.png"
                 alt="Picture of the author"
