@@ -41,6 +41,7 @@ export default function Skills({
               <li>Next.js</li>
               <li>React Native</li>
               <li>Tailwind CSS</li>
+              <li>Redux Toolkit</li>
               <li>Angular</li>
               <li>SASS</li>
               <li>Bootstrap</li>

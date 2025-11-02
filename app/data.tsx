@@ -17,9 +17,8 @@ export const titleList = [
   "REACT NATIVE DEVELOPER",
   "NEXT.JS DEVELOPER",
   "NESTJS DEVELOPER",
-  "WEB DEVELOPER",
-  "DESIGNER",
-  "UI/UX ENTHUSIAST",
+  ".NET DEVELOPER",
+  "UI/UX DESIGNER",
 ];
 
 export const skills = [
@@ -77,53 +76,65 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "Quest Around",
-    tech: "Expo React Native, NestJS, Postgres (work in process)",
-    description: `A Map application (in development) using React Native Maps, featuring an original UI inspired by Deshi culture with a gaming vibe. Its goal is to connect neighborhood communities, enabling people to communicate, share needs, and offer services. This long-standing vision will expand in the future with money exchange and paid event features.`,
-    link: "https://github.com/RafidRisun/QuestAround-ReactNative",
+    title: "Trinity-one AI (Sparktech Agency)",
+    tech: "Expo React Native, TailwindCSS, Redux Toolkit",
+    description: `Refactored the Mobile Frontend and Integrated RESTful APIs of an existing project designed to support
+personal development and continuous learning for an overseas client with Authentication, Stripe payment for
+subscription, Viewing and Creating tasks. Used RTK-Query for API communication State and Data Management using Redux-Toolkit, Async Storage and Expo Secure-Storage`,
+    link: "",
   },
   {
     id: 2,
+    title: "AirShip Send (Sparktech Agency)",
+    tech: "Expo React Native, TailwindCSS, Redux Toolkit",
+    description: `Developed the Mobile Frontend a Pathao-like application for an overseas client which provides multiple
+services- Food Delivery, Shopping, Errands, Pickup and Delivery, Ride sharing with On-boarding, Auth, Cart and 
+Order Management. Used TWRNC for styling with tailwindCSS. State and Data Management using Redux-Toolkit and Async Storage. Used community UI libraries such as Reanimated Carousel, Slider, Picker-Select, OTP-Entry`,
+    link: "",
+  },
+  {
+    id: 3,
     title: "ManageResto (ThreeSquare)",
     tech: "Angular, Bootstrap, SASS, .Net Core, Postgres",
     description: `A Multi tenant POS application where you can register orders, customize, put on hold, make payment. A terminal Dashboard to have a clear picture on on-going orders and an overall summary. An admin section to make changes in the menu items, categories, variations etc.`,
     link: "",
   },
   {
-    id: 3,
-    title: "Doctor Appointment Management System",
-    tech: "Nextjs, Tailwind CSS, Axios",
-    description: `An advanced, full-stack web application for managing doctor appointments, built with Next.js, TypeScript, Tailwind CSS, and Axios. This system provides seamless experiences for both patients and doctors, including authentication, dashboards, appointment booking, notifications, and more.`,
-    link: "https://github.com/RafidRisun/Doctor-Appointment-Management-System-HISHABEE",
-  },
-  {
     id: 4,
-    title: "Student Community Platform",
-    tech: "NestJS, NextJS, Tailwind CSS, Postgres",
-    description: `A Social Media Platform for students to create profile, Newsfeed, Make friends, Join groups, Chat, Job search, Forums, Events, Notifications, Search has a subscriptions system, Admin page and many more.`,
+    title: "Quest Around",
+    tech: "Expo React Native, NestJS, Postgres (work in process)",
+    description: `A Map application (in development) using React Native Maps, featuring an original UI inspired by Deshi culture with a gaming vibe. Its goal is to connect neighborhood communities, enabling people to communicate, share needs, and offer services. This long-standing vision will expand in the future with money exchange and paid event features.`,
     link: "",
   },
   {
     id: 5,
-    title: "Digital Art Marketplace",
-    tech: "HTML, CSS, PHP, Javascript, AJAX",
-    description: `A website to upload your artwork, showcase it in your profile, be featured in newsfeed, sell it to other users, buy from others, chat with others, search other users, notification system, cash in, transaction history, edit or delete profile.`,
-    link: "",
+    title: "Portfolio Website",
+    tech: "Nextjs, Tailwind CSS",
+    description: `Frontend Web Application using Nextjs with a modern complete original look, showcasing my career, experience
+ and projects.`,
+    link: "https://github.com/RafidRisun/Portfolio-Website",
+  },
+  {
+    id: 6,
+    title: "Doctor Appointment Management System",
+    tech: "Nextjs, Tailwind CSS, Axios",
+    description: `An advanced, full-stack web application for managing doctor appointments, built with Next.js, TypeScript, Tailwind CSS, and Axios. This system provides seamless experiences for both patients and doctors, including authentication, dashboards, appointment booking, notifications, and more.`,
+    link: "https://github.com/RafidRisun/Doctor-Appointment-Management-System-HISHABEE",
   },
 ];
 
 export const experiences = [
   {
     id: 1,
-    company: "ThreeSquare",
-    role: "UI/UX Designer Part-time",
+    company: "Sparktech Agency -- Betopia Group",
+    role: "React Native Developer",
     period: "September 2025 - Present",
   },
   {
     id: 2,
     company: "ThreeSquare",
     role: "Software Developer Intern",
-    period: "March 2025 - August 2025",
+    period: "June 2025 - August 2025",
   },
   {
     id: 3,

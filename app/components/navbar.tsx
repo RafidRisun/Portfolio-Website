@@ -39,7 +39,7 @@ export default function Navbar({
             <DarkMode dark={dark} setDark={setDark} />
           </li>
           <li className="flex items-center">
-            <a href="/RafidRisunCV.pdf" download className="hover:underline">
+            <a href="/Risun_s_Resume.pdf" download className="hover:underline">
               Download CV
             </a>
           </li>
@@ -66,7 +66,7 @@ export default function Navbar({
             </li>
             <li>
               <a
-                href="/RafidRisunCV.pdf"
+                href="/Risun_s_Resume.pdf"
                 download
                 className="hover:underline"
                 onClick={() => setHamburgerOpen(false)}
