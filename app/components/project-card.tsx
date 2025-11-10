@@ -10,7 +10,8 @@ export default function ProjectCard({
     title: string;
     tech: string;
     description: string;
-    link?: string;
+    repo?: string;
+    video?: string;
   };
   dark: boolean;
 }) {
@@ -30,9 +31,14 @@ export default function ProjectCard({
           {project.description}
         </p>
       </div>
-      {project.link && (
-        <a href={project.link} className="text-sm text-white hover:underline">
+      {project.repo && (
+        <a href={project.repo} className="text-sm text-white hover:underline">
           View on GitHub
+        </a>
+      )}
+      {project.video && (
+        <a href={project.video} className="text-sm text-white hover:underline">
+          Video Demo
         </a>
       )}
     </div>
