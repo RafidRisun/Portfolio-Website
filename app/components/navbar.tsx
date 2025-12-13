@@ -66,7 +66,7 @@ export default function Navbar({
 						</li>
 						<li>
 							<a
-								href="/Risun_s_Resume.pdf"
+								href="/Rafid_s_Resume.pdf"
 								download
 								className="hover:underline"
 								onClick={() => setHamburgerOpen(false)}
