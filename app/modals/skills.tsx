@@ -47,6 +47,7 @@ export default function Skills({
               <li>Bootstrap</li>
               <li>NestJS</li>
               <li>Dot Net</li>
+              <li>Firebase</li>
             </ul>
           </div>
           <div>
