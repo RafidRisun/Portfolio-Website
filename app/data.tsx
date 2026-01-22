@@ -98,6 +98,14 @@ Chatbot API Integrated, Audio recorder and player created for voice notes using 
 	},
 	{
 		id: 6,
+		title: 'Ultim8Sports (Sparktech Agency)',
+		tech: 'Expo React Native, TailwindCSS',
+		description: `Developed the Mobile Frontend of a Card Collectors application for an overseas client which provides showcasing cards, presents price charts from Ebay, scanning and adding new cards to the collection. Used TWRNC for styling with tailwindCSS.`,
+		video:
+			'https://drive.google.com/file/d/1f7xCCDSZ172bf7MZn2UDUqKdvfmpYAXx/view?usp=drive_link',
+	},
+	{
+		id: 6,
 		title: 'Soulflag Dating App (Sparktech Agency)',
 		tech: 'Expo React Native, TailwindCSS',
 		description: `Developed the Mobile Frontend of a Tinder-like application for an overseas client which provides dating services with On-boarding, Authentication, Profile Creation, Swipe, Match, Chatting features and find people by Events. Used TWRNC for styling with tailwindCSS.`,
@@ -127,20 +135,6 @@ Order Management. Used TWRNC for styling with tailwindCSS. State and Data Manage
 		description: `A Front-End practice of Web application using NextJS where properties are listed, can be viewed, filtered, get started with email, showcase users, clients and reviews using beautiful caroussel. Login and Signup pages were implemented with form validation using Formik. The application has been styled using TailwindCSS with a modern look and have been made responsive for Mobile devices as well. The application is hosted on Vercel.`,
 		repo: 'https://github.com/RafidRisun/Property-buy-website',
 		live: 'https://property-buy-website.vercel.app/',
-	},
-	{
-		id: 3,
-		title: 'Quest Around (Personal)',
-		tech: 'Expo React Native, NestJS, Postgres (work in process)',
-		description: `A Map application (in development) using React Native Maps, featuring an original UI inspired by Deshi culture with a gaming vibe. Its goal is to connect neighborhood communities, enabling people to communicate, share needs, and offer services. This long-standing vision will expand in the future with money exchange and paid event features.`,
-	},
-	{
-		id: 2,
-		title: 'Portfolio Website',
-		tech: 'Nextjs, Tailwind CSS',
-		description: `Frontend Web Application using Nextjs with a modern complete original look, showcasing my career, experience
- and projects.`,
-		repo: 'https://github.com/RafidRisun/Portfolio-Website',
 	},
 	{
 		id: 1,
