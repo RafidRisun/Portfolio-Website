@@ -172,7 +172,7 @@ export const experiences = [
     id: 1,
     company: "Sparktech Agency -- Betopia Group",
     role: "React Native Developer",
-    period: "September 2025 - Present",
+    period: "September 2025 - February 2026",
   },
   {
     id: 2,
