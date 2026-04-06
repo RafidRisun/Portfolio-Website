@@ -88,33 +88,29 @@ export const skills = [
 export const projects = [
   {
     id: 8,
-    title: "Soulflag Dating App (Sparktech Agency)",
-    tech: "Expo React Native, TailwindCSS",
-    description: `Developed the Mobile Frontend of a Tinder-like application for an overseas client which provides dating services with On-boarding, Authentication, Profile Creation, Swipe, Match, Chatting features and find people by Events. Used TWRNC for styling with tailwindCSS.`,
-    repo: "",
-    video:
-      "https://drive.google.com/file/d/1ZgSVixPls6Ragd7TVNMfd2AoQFp707U4/view",
-  },
-  {
-    id: 7,
-    title: "Property Buy Sell Web App (Personal)",
-    tech: "NextJS, TailwindCSS",
-    description: `A Front-End practice of Web application using NextJS where properties are listed, can be viewed, filtered, get started with email, showcase users, clients and reviews using beautiful caroussel. Login and Signup pages were implemented with form validation using Formik. The application has been styled using TailwindCSS with a modern look and have been made responsive for Mobile devices as well. The application is hosted on Vercel.`,
-    repo: "https://github.com/RafidRisun/Property-buy-website",
-    video: "",
-    live: "https://property-buy-website.vercel.app/",
-  },
-  {
-    id: 6,
-    title: "Trinity-one AI (Sparktech Agency)",
+    title: "Dreams Compass (Sparktech Agency)",
     tech: "Expo React Native, TailwindCSS, Redux Toolkit",
     description: `Refactored the Mobile Frontend and Integrated RESTful APIs of an existing project designed to support
 personal development and continuous learning for an overseas client with Authentication, Stripe payment for
 subscription, Viewing and Creating tasks. Used RTK-Query for API communication State and Data Management using Redux-Toolkit, Async Storage and Expo Secure-Storage {\n}
 Chatbot API Integrated, Audio recorder and player created for voice notes using Expo-Audio`,
-    repo: "",
-    video: "",
-    live: "",
+    appstore: "https://apps.apple.com/us/app/dreams-compass/id6755804710",
+  },
+  {
+    id: 6,
+    title: "Ultim8Sports (Sparktech Agency)",
+    tech: "Expo React Native, TailwindCSS",
+    description: `Developed the Mobile Frontend and Integrating RESTful APIs of a Card Collectors application for an overseas client which provides showcasing cards, presents price charts from Ebay, scanning and adding new cards to the collection. Used TWRNC for styling with tailwindCSS.`,
+    video:
+      "https://drive.google.com/file/d/1f7xCCDSZ172bf7MZn2UDUqKdvfmpYAXx/view?usp=drive_link",
+  },
+  {
+    id: 6,
+    title: "Soulflag Dating App (Sparktech Agency)",
+    tech: "Expo React Native, TailwindCSS",
+    description: `Developed the Mobile Frontend of a Tinder-like application for an overseas client which provides dating services with On-boarding, Authentication, Profile Creation, Swipe, Match, Chatting features and find people by Events. Used TWRNC for styling with tailwindCSS.`,
+    video:
+      "https://drive.google.com/file/d/1ZgSVixPls6Ragd7TVNMfd2AoQFp707U4/view",
   },
   {
     id: 5,
@@ -123,38 +119,22 @@ Chatbot API Integrated, Audio recorder and player created for voice notes using 
     description: `Developed the Mobile Frontend a Pathao-like application for an overseas client which provides multiple
 services- Food Delivery, Shopping, Errands, Pickup and Delivery, Ride sharing with On-boarding, Auth, Cart and 
 Order Management. Used TWRNC for styling with tailwindCSS. State and Data Management using Redux-Toolkit and Async Storage. Used community UI libraries such as Reanimated Carousel, Slider, Picker-Select, OTP-Entry`,
-    repo: "",
     video:
       "https://drive.google.com/file/d/1QzkalAiSI3j8JxxFa19w2cb-0cx4qALw/view",
-    live: "",
   },
   {
     id: 4,
     title: "ManageResto (ThreeSquare)",
     tech: "Angular, Bootstrap, SASS, .Net Core, Postgres",
     description: `A Multi tenant POS application where you can register orders, customize, put on hold, make payment. A terminal Dashboard to have a clear picture on on-going orders and an overall summary. An admin section to make changes in the menu items, categories, variations etc.`,
-    repo: "",
-    video: "",
-    live: "",
   },
   {
-    id: 3,
-    title: "Quest Around",
-    tech: "Expo React Native, NestJS, Postgres (work in process)",
-    description: `A Map application (in development) using React Native Maps, featuring an original UI inspired by Deshi culture with a gaming vibe. Its goal is to connect neighborhood communities, enabling people to communicate, share needs, and offer services. This long-standing vision will expand in the future with money exchange and paid event features.`,
-    repo: "",
-    video: "",
-    live: "",
-  },
-  {
-    id: 2,
-    title: "Portfolio Website",
-    tech: "Nextjs, Tailwind CSS",
-    description: `Frontend Web Application using Nextjs with a modern complete original look, showcasing my career, experience
- and projects.`,
-    repo: "https://github.com/RafidRisun/Portfolio-Website",
-    video: "",
-    live: "",
+    id: 7,
+    title: "Property Buy Sell Web App (Personal)",
+    tech: "NextJS, TailwindCSS",
+    description: `A Front-End practice of Web application using NextJS where properties are listed, can be viewed, filtered, get started with email, showcase users, clients and reviews using beautiful caroussel. Login and Signup pages were implemented with form validation using Formik. The application has been styled using TailwindCSS with a modern look and have been made responsive for Mobile devices as well. The application is hosted on Vercel.`,
+    repo: "https://github.com/RafidRisun/Property-buy-website",
+    live: "https://property-buy-website.vercel.app/",
   },
   {
     id: 1,
@@ -162,7 +142,6 @@ Order Management. Used TWRNC for styling with tailwindCSS. State and Data Manage
     tech: "Nextjs, Tailwind CSS, Axios",
     description: `An advanced, full-stack web application for managing doctor appointments, built with Next.js, TypeScript, Tailwind CSS, and Axios. This system provides seamless experiences for both patients and doctors, including authentication, dashboards, appointment booking, notifications, and more.`,
     repo: "https://github.com/RafidRisun/Doctor-Appointment-Management-System-HISHABEE",
-    video: "",
     live: "https://doctor-appointment-management-syste-virid.vercel.app/",
   },
 ];

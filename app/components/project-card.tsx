@@ -13,13 +13,14 @@ export default function ProjectCard({
 		repo?: string;
 		video?: string;
 		live?: string;
+		appstore?: string;
 	};
 	dark: boolean;
 }) {
 	return (
 		<div
 			key={project.id}
-			className={`p-4 flex flex-col justify-between rounded h-90 sm:h-100 lg:h-80 ${
+			className={`p-4 flex flex-col justify-between rounded h-120 lg:h-80 ${
 				dark ? 'bg-gray-800' : 'bg-black'
 			}`}
 		>
@@ -45,6 +46,14 @@ export default function ProjectCard({
 			{project.live && (
 				<a href={project.live} className="text-sm text-white hover:underline">
 					Live Demo
+				</a>
+			)}
+			{project.appstore && (
+				<a
+					href={project.appstore}
+					className="text-sm text-white hover:underline"
+				>
+					App Store
 				</a>
 			)}
 		</div>
