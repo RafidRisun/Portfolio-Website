@@ -45,7 +45,7 @@ export default function ProjectCard({
 			)}
 			{project.live && (
 				<a href={project.live} className="text-sm text-white hover:underline">
-					Live Demo
+					Live
 				</a>
 			)}
 			{project.appstore && (

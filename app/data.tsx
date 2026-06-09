@@ -88,6 +88,13 @@ export const skills = [
 export const projects = [
   {
     id: 8,
+    title: "Abdullah and Associates Law Firm Website (Freelance)",
+    tech: "Wordpress, html, css",
+    description: `Redesigned and Developed a modern and responsive website for a law firm using Wordpress, HTML, and CSS. The website features a clean and professional design, easy navigation, and is optimized for both desktop and mobile devices. It includes sections for practice areas, attorney profiles, client testimonials, and a contact form to enhance user engagement and provide essential information about the firm's services.`,
+    live: "https://abdullahandassociates.com/",
+  },
+  {
+    id: 7,
     title: "Dreams Compass (Sparktech Agency)",
     tech: "Expo React Native, TailwindCSS, Redux Toolkit",
     description: `Refactored the Mobile Frontend and Integrated RESTful APIs of an existing project designed to support
@@ -105,7 +112,7 @@ Chatbot API Integrated, Audio recorder and player created for voice notes using 
       "https://drive.google.com/file/d/1f7xCCDSZ172bf7MZn2UDUqKdvfmpYAXx/view?usp=drive_link",
   },
   {
-    id: 6,
+    id: 5,
     title: "Soulflag Dating App (Sparktech Agency)",
     tech: "Expo React Native, TailwindCSS",
     description: `Developed the Mobile Frontend of a Tinder-like application for an overseas client which provides dating services with On-boarding, Authentication, Profile Creation, Swipe, Match, Chatting features and find people by Events. Used TWRNC for styling with tailwindCSS.`,
@@ -113,7 +120,7 @@ Chatbot API Integrated, Audio recorder and player created for voice notes using 
       "https://drive.google.com/file/d/1ZgSVixPls6Ragd7TVNMfd2AoQFp707U4/view",
   },
   {
-    id: 5,
+    id: 4,
     title: "AirShip Send (Sparktech Agency)",
     tech: "Expo React Native, TailwindCSS, Redux Toolkit",
     description: `Developed the Mobile Frontend a Pathao-like application for an overseas client which provides multiple
@@ -123,13 +130,13 @@ Order Management. Used TWRNC for styling with tailwindCSS. State and Data Manage
       "https://drive.google.com/file/d/1QzkalAiSI3j8JxxFa19w2cb-0cx4qALw/view",
   },
   {
-    id: 4,
+    id: 3,
     title: "ManageResto (ThreeSquare)",
     tech: "Angular, Bootstrap, SASS, .Net Core, Postgres",
     description: `A Multi tenant POS application where you can register orders, customize, put on hold, make payment. A terminal Dashboard to have a clear picture on on-going orders and an overall summary. An admin section to make changes in the menu items, categories, variations etc.`,
   },
   {
-    id: 7,
+    id: 2,
     title: "Property Buy Sell Web App (Personal)",
     tech: "NextJS, TailwindCSS",
     description: `A Front-End practice of Web application using NextJS where properties are listed, can be viewed, filtered, get started with email, showcase users, clients and reviews using beautiful caroussel. Login and Signup pages were implemented with form validation using Formik. The application has been styled using TailwindCSS with a modern look and have been made responsive for Mobile devices as well. The application is hosted on Vercel.`,
