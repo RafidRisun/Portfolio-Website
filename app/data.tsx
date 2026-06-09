@@ -141,7 +141,7 @@ Order Management. Used TWRNC for styling with tailwindCSS. State and Data Manage
     tech: "NextJS, TailwindCSS",
     description: `A Front-End practice of Web application using NextJS where properties are listed, can be viewed, filtered, get started with email, showcase users, clients and reviews using beautiful caroussel. Login and Signup pages were implemented with form validation using Formik. The application has been styled using TailwindCSS with a modern look and have been made responsive for Mobile devices as well. The application is hosted on Vercel.`,
     repo: "https://github.com/RafidRisun/Property-buy-website",
-    live: "https://property-buy-website.vercel.app/",
+    live: "https://property-buy-website.vercel.app/main/buy",
   },
   {
     id: 1,
