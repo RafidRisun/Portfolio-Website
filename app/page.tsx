@@ -17,7 +17,7 @@ export default function Home() {
   const [oneThirdHeight, setOneThirdHeight] = useState(0);
   const [twoThirdHeight, setTwoThirdHeight] = useState(0);
   const [modal, setModal] = useState(false);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   const navbarHeight = 130; // h-20 in Tailwind = 5rem = 80px
 
