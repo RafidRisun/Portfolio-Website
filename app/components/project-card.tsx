@@ -1,61 +1,66 @@
-import React from 'react';
-import { dotFont } from '../font/localFonts';
+import React from "react";
+import { dotFont } from "../font/localFonts";
 
 export default function ProjectCard({
-	project,
-	dark,
+  project,
+  dark,
 }: {
-	project: {
-		id: number;
-		title: string;
-		tech: string;
-		description: string;
-		repo?: string;
-		video?: string;
-		live?: string;
-		appstore?: string;
-	};
-	dark: boolean;
+  project: {
+    id: number;
+    title: string;
+    tech: string;
+    description: string;
+    repo?: string;
+    video?: string;
+    live?: string;
+    appstore?: string;
+  };
+  dark: boolean;
 }) {
-	return (
-		<div
-			key={project.id}
-			className={`p-4 flex flex-col justify-between rounded h-140 lg:h-120 ${
-				dark ? 'bg-gray-800' : 'bg-black'
-			}`}
-		>
-			<div className="text-white">
-				<h2 className={`text-lg sm:text-2xl ${dotFont.className}`}>
-					{project.title}
-				</h2>
-				<h2 className="text-sm sm:text-lg">{project.tech}</h2>
-				<p className="mt-2 text-sm sm:text-md text-justify">
-					{project.description}
-				</p>
-			</div>
-			{project.repo && (
-				<a href={project.repo} className="text-sm text-white hover:underline">
-					View on GitHub
-				</a>
-			)}
-			{project.video && (
-				<a href={project.video} className="text-sm text-white hover:underline">
-					Video Demo
-				</a>
-			)}
-			{project.live && (
-				<a href={project.live} className="text-sm text-white hover:underline">
-					Live
-				</a>
-			)}
-			{project.appstore && (
-				<a
-					href={project.appstore}
-					className="text-sm text-white hover:underline"
-				>
-					App Store
-				</a>
-			)}
-		</div>
-	);
+  return (
+    <div
+      key={project.id}
+      className={`p-4 flex flex-col justify-between rounded h-140 lg:h-120 ${
+        dark ? "bg-gray-800" : "bg-black"
+      }`}
+    >
+      <div className="text-white">
+        <h2 className={`text-lg sm:text-2xl ${dotFont.className}`}>
+          {project.title}
+        </h2>
+        <h2 className="text-sm sm:text-lg">{project.tech}</h2>
+        <p className="mt-2 text-sm sm:text-md text-justify">
+          {project.description}
+        </p>
+      </div>
+      <div className="mt-4 flex flex-col gap-2">
+        {project.repo && (
+          <a href={project.repo} className="text-sm text-white hover:underline">
+            View on GitHub
+          </a>
+        )}
+        {project.video && (
+          <a
+            href={project.video}
+            className="text-sm text-white hover:underline"
+          >
+            Video Demo
+          </a>
+        )}
+        {project.live && (
+          <a href={project.live} className="text-sm text-white hover:underline">
+            Live
+          </a>
+        )}
+        {project.appstore && (
+          <a
+            href={project.appstore}
+            className="text-sm text-white hover:underline"
+          >
+            App Store
+          </a>
+        )}
+      </div>
+    </div>
+  );
 }
