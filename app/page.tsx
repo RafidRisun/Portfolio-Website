@@ -164,6 +164,14 @@ export default function Home() {
               >
                 github.com/RafidRisun
               </a>
+              <a
+                href="https://www.behance.net/rafidrisun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-md sm:text-lg hover:underline"
+              >
+                behance.net/rafidrisun
+              </a>
               <p className="text-white text-xs sm:text-xs pt-10 text-wrap text-center p-5">
                 Made with Next.js & Tailwind by Rafid Hassan Risun
               </p>

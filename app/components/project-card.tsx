@@ -20,7 +20,7 @@ export default function ProjectCard({
 	return (
 		<div
 			key={project.id}
-			className={`p-4 flex flex-col justify-between rounded h-120 lg:h-80 ${
+			className={`p-4 flex flex-col justify-between rounded h-140 lg:h-120 ${
 				dark ? 'bg-gray-800' : 'bg-black'
 			}`}
 		>
