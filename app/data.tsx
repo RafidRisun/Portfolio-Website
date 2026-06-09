@@ -109,7 +109,7 @@ Chatbot API Integrated, Audio recorder and player created for voice notes using 
     tech: "Expo React Native, TailwindCSS",
     description: `Developed the Mobile Frontend and Integrating RESTful APIs of a Card Collectors application for an overseas client which provides showcasing cards, presents price charts from Ebay, scanning and adding new cards to the collection. Used TWRNC for styling with tailwindCSS.`,
     video:
-      "https://drive.google.com/file/d/1f7xCCDSZ172bf7MZn2UDUqKdvfmpYAXx/view?usp=drive_link",
+      "https://docs.google.com/videos/d/1wO4UzPoBKbmcypXUXtmSy8_Ag4Eau4sUvvY4xQsYeNE/edit?usp=sharing",
   },
   {
     id: 5,
